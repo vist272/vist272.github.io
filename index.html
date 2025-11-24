@@ -57,9 +57,11 @@
             <div class="grid">
                 <article class="card">
                     <div class="tag">Creative Coding</div>
-                    <h3>Generative Garden</h3>
-                    <p>A p5.js study of organic motion using noise-driven stems and blooming sprites.</p>
-                    <a class="inline-link" href="#" aria-label="View Generative Garden project">View project →</a>
+                    <h3>Challenge 1</h3>
+                    <p>Interactive creative coding exploration with p5.js.</p>
+                    <a class="inline-link" href="#"
+                        onclick="openProject('projects/Challenge1/index.html', 'Challenge 1'); return false;"
+                        aria-label="View Challenge 1 project">View project →</a>
                 </article>
                 <article class="card">
                     <div class="tag">Rendering</div>
@@ -141,6 +143,47 @@
         <span>© 2024 Your Name — VIST272</span>
         <span>Built with HTML & CSS, ready for GitHub Pages.</span>
     </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="modal-close" onclick="closeProject()">&times;</button>
+            </div>
+            <iframe id="projectFrame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openProject(url, title) {
+            document.getElementById('projectModal').style.display = 'flex';
+            document.getElementById('projectFrame').src = url;
+            document.getElementById('modalTitle').textContent = title;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProject() {
+            document.getElementById('projectModal').style.display = 'none';
+            document.getElementById('projectFrame').src = '';
+            document.body.style.overflow = '';
+        }
+
+        // Close modal when clicking outside the content
+        window.onclick = function (event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target === modal) {
+                closeProject();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeProject();
+            }
+        });
+    </script>
 </body>
 
 </html>
