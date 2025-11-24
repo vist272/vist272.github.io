@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIST272 Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Manrope:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">VIST272</div>
+        <nav class="nav">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="cta" href="#contact">Let's talk</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <p class="eyebrow">Portfolio Demo</p>
+                <h1>Hi, I'm Your Name.</h1>
+                <p class="lede">Visual computing student at Texas A&M, building playful, interactive experiences that
+                    blend code and design.</p>
+                <div class="hero__actions">
+                    <a class="btn primary" href="#projects">See recent work</a>
+                    <a class="btn ghost" href="#about">Course journey</a>
+                </div>
+            </div>
+            <div class="hero__card">
+                <p class="stat-label">In this course</p>
+                <div class="stat">
+                    <span class="stat__number">272</span>
+                    <span class="stat__text">creative hours</span>
+                </div>
+                <p class="stat-note">Exploring shaders, generative art, and interactive sketches.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section__header">
+                <p class="eyebrow">Projects</p>
+                <h2>Selected work</h2>
+                <p class="lede">A small set of sketches and studies from VIST272. Swap in your own links or screenshots.
+                </p>
+            </div>
+            <div class="grid">
+                <article class="card">
+                    <div class="tag">Creative Coding</div>
+                    <h3>Generative Garden</h3>
+                    <p>A p5.js study of organic motion using noise-driven stems and blooming sprites.</p>
+                    <a class="inline-link" href="#" aria-label="View Generative Garden project">View project →</a>
+                </article>
+                <article class="card">
+                    <div class="tag">Rendering</div>
+                    <h3>Four-View Explorer</h3>
+                    <p>WebGL exploration of multiple camera views to understand projection and shading.</p>
+                    <a class="inline-link" href="#" aria-label="View Four-View Explorer project">View project →</a>
+                </article>
+                <article class="card">
+                    <div class="tag">Study</div>
+                    <h3>Image Processing Lab</h3>
+                    <p>Brightness, blur, and edge detection experiments built with custom pixel shaders.</p>
+                    <a class="inline-link" href="#" aria-label="View Image Processing Lab project">View project →</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="section section--split">
+            <div>
+                <p class="eyebrow">About</p>
+                <h2>What drives my work</h2>
+                <p class="lede">Curiosity and play. I'm interested in how code can sketch feelings — light, rhythm, and
+                    motion — not just render shapes.</p>
+            </div>
+            <div class="about-list">
+                <div class="about-item">
+                    <h4>Focus</h4>
+                    <p>Generative art, human-computer interaction, and storytelling through interactive visuals.</p>
+                </div>
+                <div class="about-item">
+                    <h4>In this class</h4>
+                    <p>Experimenting weekly with p5.js and WebGL to learn how visuals are built from the pixel up.</p>
+                </div>
+                <div class="about-item">
+                    <h4>Beyond</h4>
+                    <p>Available for collaborations and internships. Open to sharing process and code with peers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section__header">
+                <p class="eyebrow">Skills</p>
+                <h2>Tools & topics</h2>
+            </div>
+            <div class="pill-row">
+                <span class="pill">p5.js</span>
+                <span class="pill">WebGL</span>
+                <span class="pill">Shaders</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">Figma</span>
+                <span class="pill">Adobe CC</span>
+                <span class="pill">GitHub Pages</span>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div>
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s build something</h2>
+                <p class="lede">Email me or connect on GitHub. Replace these with your own links before sharing.</p>
+                <div class="contact-links">
+                    <a class="btn primary" href="mailto:you@example.com">Email me</a>
+                    <a class="btn ghost" href="https://github.com/your-handle" target="_blank"
+                        rel="noreferrer">GitHub</a>
+                </div>
+            </div>
+            <div class="contact-card">
+                <p class="stat-label">Next steps</p>
+                <ul>
+                    <li>Swap in your name, links, and project screenshots.</li>
+                    <li>Publish with GitHub Pages.</li>
+                    <li>Iterate weekly as your course projects grow.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2024 Your Name — VIST272</span>
+        <span>Built with HTML & CSS, ready for GitHub Pages.</span>
+    </footer>
+</body>
+
+</html>
